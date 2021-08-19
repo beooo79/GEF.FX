@@ -14,7 +14,7 @@
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
         <javafx.version>14.0.2.1</javafx.version>
-        <mainClassName>de.gef.fx.HelloFX</mainClassName>
+        <mainClassName>de.gef.fx.GearFx</mainClassName>
     </properties>
 
     <dependencies>
@@ -33,6 +33,12 @@
             <artifactId>testfx-core</artifactId>
             <version>4.0.16-alpha</version>
             <scope>test/scope></scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
