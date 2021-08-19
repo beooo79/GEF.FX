@@ -14,15 +14,14 @@ public class HelloFX extends Application {
     public void start(Stage stage) {
         String javaVersion = System.getProperty("java.version");
         String javafxVersion = System.getProperty("javafx.version");
-        Label label = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
+        var label = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
+        var imageView = new ImageView(new Image(HelloFX.class.getResourceAsStream("geffx.png")));
+        var root = new VBox(30, imageView, label);
+        var scene = new Scene(root, 1200, 800);
 
-        ImageView imageView = new ImageView(new Image(HelloFX.class.getResourceAsStream("openduke.png")));
         imageView.setFitHeight(200);
         imageView.setPreserveRatio(true);
-
-        VBox root = new VBox(30, imageView, label);
         root.setAlignment(Pos.CENTER);
-        Scene scene = new Scene(root, 640, 480);
         scene.getStylesheets().add(HelloFX.class.getResource("styles.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
