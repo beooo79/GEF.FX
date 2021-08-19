@@ -42,11 +42,11 @@
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="843.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane dividerPositions="0.1" orientation="VERTICAL" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
   <items>
-    <AnchorPane prefHeight="2.0" prefWidth="1148.0">
+    <AnchorPane>
          <children>
-            <ToolBar prefHeight="52.0" prefWidth="1148.0">
+            <ToolBar prefHeight="418.0" prefWidth="1148.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <items>
                 <Button mnemonicParsing="false" text="Button" />
               </items>
@@ -60,7 +60,7 @@
                      <children>
                         <ScrollPane prefHeight="388.0" prefWidth="1148.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <content>
-                              <TableView prefHeight="398.0" prefWidth="1150.0">
+                              <TableView prefHeight="549.0" prefWidth="1150.0">
                                 <columns>
                                   <TableColumn prefWidth="75.0" text="C1" />
                                   <TableColumn prefWidth="75.0" text="C2" />
