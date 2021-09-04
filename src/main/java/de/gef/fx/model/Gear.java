@@ -1,9 +1,8 @@
-package de.gef.fx;
+package de.gef.fx.model;
 
 import java.math.BigDecimal;
 import java.time.ZonedDateTime;
 
-import javafx.util.converter.BigDecimalStringConverter;
 import lombok.Builder;
 import lombok.Getter;
 
